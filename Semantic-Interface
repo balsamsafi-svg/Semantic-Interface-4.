@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Service Desk</title>
+</head>
+<body>
+
+    <header>
+        <h1>Campus Service Desk</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#requests">My Requests</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <h2>Welcome to Campus Service Desk</h2>
+        <p>Submit and track your campus service requests.</p>
+
+        <section>
+            <h2>Submit a New Request</h2>
+
+            <form action="#" method="get">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name"
+                       name="student-name" required>
+
+                <br><br>
+
+                <label for="request-type">Request Type:</label>
+                <select id="request-type" name="request-type">
+                    <option value="technical">Technical Support</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+
+                <br><br>
+
+                <label for="description">Description:</label>
+                <textarea id="description"
+                          name="description" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <section id="requests">
+            <h2>Recent Requests</h2>
+
+            <article>
+                <h3>Wi-Fi Problem</h3>
+                <p>Status: Pending</p>
+            </article>
+
+            <article>
+                <h3>Projector Repair</h3>
+                <p>Status: Completed</p>
+            </article>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Campus Service Desk - Contact Support</p>
+    </footer>
+
+</body>
+</html>
